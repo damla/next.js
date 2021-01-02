@@ -32,7 +32,7 @@ const VALID_LAYOUT_VALUES = [
 ] as const
 type LayoutValue = typeof VALID_LAYOUT_VALUES[number]
 
-type ImgElementStyle = NonNullable<JSX.IntrinsicElements['img']['style']>
+export type ImgElementStyle = NonNullable<JSX.IntrinsicElements['img']['style']>
 
 export type ImageProps = Omit<
   JSX.IntrinsicElements['img'],
